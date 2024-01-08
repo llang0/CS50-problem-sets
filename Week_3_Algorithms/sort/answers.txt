@@ -1,0 +1,20 @@
+sort1 uses: Bubble sort
+    real    0m0.219s for 10,000 random
+    real    0m0.090s for 10,000 sorted items
+    real    0m0.305s for 10,000 reversed items
+How do you know?: Bubble sort can be very fast when the items are in the right order.
+since the time for sorted items was so short, this must be bubble sort.
+
+sort2 uses: Merge sort
+    real    0m0.069s for 10,000 random items
+    real    0m0.073s for 10,000 sorted items
+    real    0m0.072s for 10,000 reversed items
+How do you know?: It's much faster than all the other algorithms
+
+sort3 uses: Selection sort
+    real    0m0.158s for 10,000 random items
+    real    0m0.141s fpr 10,000 sorted items
+    real    0m0.192s for 10,000 reversed items
+    
+How do you know?: The 3 times were very similar, but not as fast as Merge sort.
+
