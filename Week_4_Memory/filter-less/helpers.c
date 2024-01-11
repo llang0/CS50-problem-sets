@@ -1,6 +1,6 @@
 #include "helpers.h"
 #include <math.h>
-#include <stdio.h>
+
 
 int SIZE_NEIGHBORS = 9;
 
@@ -17,7 +17,6 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
             // take the average of each pixel
             float average = (image[i][j].rgbtBlue + image[i][j].rgbtRed + image[i][j].rgbtGreen) / 3.0;
             uint8_t a = (uint8_t) round(average);
-            printf("%i\n", a);
             // update the pixel with new rgb values
             image[i][j].rgbtRed = a;
             image[i][j].rgbtGreen = a;
@@ -100,8 +99,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-
-            printf("Input: %i, %i, %i\n", image[i][j].rgbtRed, image[i][j].rgbtGreen, image[i][j].rgbtBlue);
             float averageRed = 0.0;
             float averageGreen = 0.0;
             float averageBlue = 0.0;
