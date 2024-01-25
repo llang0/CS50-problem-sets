@@ -1,0 +1,42 @@
+HTML Tags:
+    div
+    h1
+    p
+    a
+    script
+    h2
+    ul
+    li
+    iframe 
+    img
+
+CSS properties
+    background-color
+    color
+    font-family
+    padding
+    margin
+    font-family
+    background-color
+    font-size
+    text-align
+    width
+    position
+    display
+    top
+    right
+    left
+    border
+    transform
+    visibility
+
+
+Bootstrap
+    I'm not much of a fan of Bootstrap, so I only incorporated one button.
+    To find it, scroll to the bottom of the "how its made" page.
+
+Javascript
+    I have recently been enjoying creating ASCII art. 
+    I used javascript and p5js to render one work of ascii art on flower.HTML,
+    and I created a simple interface to allow the user to create their own
+    picture on make_your_own.html

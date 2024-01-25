@@ -1,0 +1,119 @@
+body{
+    background-color: black !important;
+    color: white !important;
+    font-family: monospace !important;
+    /* padding-top: 20vh;
+    padding-left: 20vw; */
+}
+
+#flower-body{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    background-color: black;
+    font-size: 6px;
+    /* padding-top: 5vh; */
+    text-align: center;
+}
+
+.ascii-text{
+    font-family: monospace;
+    background-color: black;
+    font-size: 6px;
+    /* padding-top: 5vh; */
+    text-align: center;
+}
+
+a{
+    font-family: monospace;
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+}
+
+a:hover{
+    color: red;
+}
+
+#link1:hover, #link1:active,
+#back1:hover, #back1:active{
+    color: gold;
+}
+
+#link2:hover, #link2:active{
+    color: red;
+}
+
+#link3:hover, #link3:active,
+#back3:hover, #back3:active{
+    color: blue;
+}
+
+p{
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.content{
+    max-width: 400px;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    margin-bottom: 20px;
+}
+
+.back-link{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-align: start;
+    /* position: absolute;
+    z-index: 1000; */
+    /* top: 25px;
+    left: 50px; */
+}
+
+#back1:hover{
+    color: gold;
+}
+
+#preview{
+    width: 100px;
+    display: block;
+}
+
+.controls{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid white;
+    height: 500px;
+    padding: 10px;
+}
+
+#dropzone{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    min-width: 100px;
+    width: 10%;
+    height: 40px;
+    border: 1px dashed white;
+    font-size: 12px;
+    text-align: center;
+}
+
+#image{
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.external-link{
+    margin-bottom: 75px;
+}
