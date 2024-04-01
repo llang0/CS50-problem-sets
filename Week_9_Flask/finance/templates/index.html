@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <table class="table">
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+            {% for stock in stocks %}
+            <tr>
+                <td>{{stock.symbol}}</td>
+                <td>{{stock.shares}}</td>
+                <td>{{stock.price}}</td>
+                <td>{{stock.total}}</td>
+                <td>
+                    <form action="/buy" method="get">
+                        <input type="hidden" name="symbol" value={{stock.symbol}}>
+                        <button type="submit">Buy</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="/sell" method="get">
+                        <input type="hidden" name="symbol" value={{stock.symbol}}>
+                        <button type="submit">Sell</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td></td>
+                <td></td>
+                <th>Cash</th>
+                <td>{{cash}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th>TOTAL</th>
+                <td>{{total}}</td>
+            </tr>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <table class="table">
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Value</th>
+                <th>Transacted</th>
+            </tr>
+            {% for transcation in transactions %}
+            <tr>
+                <td>{{transcation.symbol}}</td>
+                <td>{{transcation.shares}}</td>
+                <td>{{transcation.value}}</td>
+                <td>{{transcation.time}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
